@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 6px 4px 3px #979696;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-items {
+   display: flex;
+}
+
+.nav-items :hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-items > li {
+    margin-left: 9px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 242, 242, 0.05);
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222222;
+    letter-spacing: 1px;
+    animation: shift 4s ease-in-out infinite alternate;
+    transform: skewX(0deg);
+    z-index: 1;
+ }
+
+ .dev-intro {
+    width: 300px;
+    line-height: -5px;
+    margin: 40px;
+ }
+
+ .dev-header {
+
+ }
+
+ .spinner {
+   position: absolute;
+   margin: 2px;
+   left: 230px;
+   width: 9.4px;
+   height: 9.4px;
+}
+
+.spinner::before,
+.spinner::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   display: block;
+   animation: spinner-b4c8mmmd 0.5s backwards, spinner-49opz7md 1.25s 0.5s infinite ease;
+   border: 5.6px solid #010001;
+   border-radius: 50%;
+   box-shadow: 0 -33.6px 0 -5.6px #010001;
+   position: absolute;
+}
+
+.spinner::after {
+   animation-delay: 0s, 1.25s;
+}
+
+.project-cards { 
+   margin: 50px;
+   width: 300px;
+   border: 2px solid grey;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.myprojects {
+   text-align: center;
+}
+
+.proj-img {
+   width: 250px;
+   height: 250px;
+   border-radius: 8px;
+}
+
+.action > li {
+    list-style-type: none;
+}
+
+
+.tech-stack {
+   display: flex;
+   padding: 10px;
+}
+
+.stack {
+   margin-left: 8px;
+   padding: 4px;
+   border: 1px solid black;
+   border-radius: 8px;
+}
+
+@keyframes spinner-b4c8mmmd {
+   from {
+      box-shadow: 0 0 0 -5.6px #010001;
+   }
+}
+
+@keyframes spinner-49opz7md {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+ @keyframes shift {
+    0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+       transform: skewX(0deg);
+    }
+ 
+    41% {
+       transform: skewX(10deg);
+    }
+ 
+    42% {
+       transform: skewX(-10deg);
+    }
+ 
+    59% {
+       transform: skewX(40deg) skewY(10deg);
+    }
+ 
+    60% {
+       transform: skewX(-40deg) skewY(-10deg);
+    }
+ 
+    63% {
+       transform: skewX(10deg) skewY(-5deg);
+    }
+ 
+    70% {
+       transform: skewX(-50deg) skewY(-20deg);
+    }
+ 
+    71% {
+       transform: skewX(10deg) skewY(-10deg);
+    }
+ }
